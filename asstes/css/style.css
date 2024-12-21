@@ -32,22 +32,20 @@
 .min-vh-100 {
   min-height: 100vh;
 }
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.px-3{
+.px-3 {
   padding-right: 12px;
   padding-right: 12px;
 }
 
-.z-1{
+.z-1 {
   z-index: 1;
 }
-
-
-
 
 .align-items-center {
   align-items: center;
@@ -55,6 +53,10 @@
 
 .justify-content-center {
   justify-content: center;
+}
+
+.justify-content-right {
+  justify-content: right;
 }
 
 .justify-content-between {
@@ -69,7 +71,8 @@
 .position-relative {
   position: relative;
 }
-.co1-12{
+
+.co1-12 {
   width: 100%;
   padding-left: 12px;
   padding-right: 12px;
@@ -81,39 +84,47 @@
   padding-right: 12px;
 }
 
-.bg-image {                                                                                                                     
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mx-90 {
+  margin-left: 90px;
+}
+
+/* .bg-image {
   background-image: url(../image/png/sign\ in\ page\ image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .heading-1 {
 
-    font-family: "Poppins",sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 43.2px;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43.2px;
   color: rgba(3, 7, 18, 1);
 }
 
-.paragraph-1 {
-  font-family: "Lato",sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
+.account {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
   color: rgba(98, 101, 109, 1);
 }
-.text-modify {
-    font-family: "Lato", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-      color: rgba(37, 99, 235, );
+
+ .account a {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgba(37 99 235 );
 }
 
-::placeholder{
-  color: rgba(37, 99, 235, );
-}
+
 
 
 label[for="Email"] {
@@ -122,14 +133,17 @@ label[for="Email"] {
 
 
 }
+
 .Email-icon {
   position: absolute;
   top: 70%;
   left: 10px;
   transform: translateY(-50%);
 }
+
 input[type="Email"][id="Email"] {
   width: 100%;
+  max-width: 340px;
   padding: 8px 43px;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -141,21 +155,22 @@ input[type="Email"][id="Email"] {
   margin-top: 30px;
 }
 
-label[for="password"] {
+label[for="Password"] {
   position: relative;
   display: flex;
 }
 
 .lock-icon {
   position: absolute;
-  top: 83%;
-  left: 25px;
+  top: 55%;
+  left: 13px;
   transform: translateY(-50%);
 }
 
 
 input[type="Password"][id="Password"] {
   width: 100%;
+  max-width: 340px;
   padding: 8px 43px;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -169,8 +184,8 @@ input[type="Password"][id="Password"] {
 
 .close-eye-icon {
   position: absolute;
-  top: 84%;
-  right: 690px;
+  top: 61%;
+  right: 301px;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -178,6 +193,7 @@ input[type="Password"][id="Password"] {
 .close-eye-icon:hover path {
   fill: blue;
 }
+
 label[for="Remember"] {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -185,7 +201,7 @@ label[for="Remember"] {
   line-height: 21px;
   color: rgba(98, 101, 109, 1);
   cursor: pointer;
-  
+
 }
 
 .Forgot {
@@ -198,27 +214,109 @@ label[for="Remember"] {
   cursor: pointer;
 }
 
+.btn-1 {
+  border: 1px solid rgba(36, 111, 240);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+  max-width: 340px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+  margin-top: 20px;
+
+}
+
+.line {
+  
+  width: 340px;
+  
+  border: 1px solid rgba(201, 207, 219, 1);
+  display: flex;
+  align-items: center;
+
+}
 
 
 
-/* .bg-image {
+.continue {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgba(145, 151, 166, 1);
+  margin-top: 15px;
+}
+
+.google-btn {
+  border: 1px solid rgba(228, 234, 247, 1);
+  background: rgba(255, 255, 255);
+  border-radius: 6px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.google {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgba(98, 101, 109, 1);
+  text-decoration: none;
+
+}
+
+.facebook-btn {
+  border: 1px solid rgba(228, 234, 247, 1);
+  background: rgba(255, 255, 255);
+  border-radius: 6px;
+  padding-left: 40px;
+  padding-right: 40px;
+  float: inline-end;
+}
+
+.facebook {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgba(98, 101, 109, 1);
+  text-decoration: none;
+}
+ */
+/* @media (min-width: 992px) {
+  section::after {
+    content: "";
+    position: absolute;
+    right: 0%;
+    left: 50%;
+    background-image: url(../image/png/bg-blue.png);
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+} */
+.bg-image {
   background-image: url(../image/png/sign\ in\ page\ image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 label[for="Email"] {
   position: relative;
-  display: flex;
-
 
 }
 
 .Email-icon {
   position: absolute;
-  top: 50%;
-  left: 5px;
+  top: 62%;
+  left: 10px;
   transform: translateY(-50%);
 }
 
@@ -227,7 +325,6 @@ label[for="Email"] {
 }
 
 .sign {
-
   font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 600;
@@ -275,15 +372,15 @@ label[for="password"] {
 
 .lock-icon {
   position: absolute;
-  top: 50%;
-  left: 5px;
+  top: 55%;
+  left: 10px;
   transform: translateY(-50%);
 }
 
 .close-eye-icon {
   position: absolute;
-  top: 50%;
-  right: 20px;
+  top: 63%;
+  right: 10px;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -347,6 +444,7 @@ label[for="Remember"] {
   border: 1px solid rgba(201, 207, 219, 1);
   display: flex;
   align-items: center;
+  margin-top: 20px;
 
 }
 
@@ -356,15 +454,16 @@ label[for="Remember"] {
   font-weight: 400;
   line-height: 21px;
   color: rgba(145, 151, 166, 1);
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .google-btn {
   border: 1px solid rgba(228, 234, 247, 1);
   background: rgba(255, 255, 255);
   border-radius: 6px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 20px;
 }
 
 .google {
@@ -381,9 +480,10 @@ label[for="Remember"] {
   border: 1px solid rgba(228, 234, 247, 1);
   background: rgba(255, 255, 255);
   border-radius: 6px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
   float: inline-end;
+  margin-top: 20px;
 }
 
 .facebook {
@@ -395,7 +495,85 @@ label[for="Remember"] {
   text-decoration: none;
 }
 
-@media (min-width: 992px) {
+
+@media (min-width:992px) {
+  section::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 50%;
+    background-image: url(../image/png/bg-blue.png);
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
+ .circle {
+    position: absolute;
+    right: -852px;
+    top: -77px;
+
+  }
+    
+
+  .Group-image {
+    position: absolute;
+    right: -901px;
+    top: 34px;
+  }
+
+  img[ alt="social-icon"] {
+    position: absolute;
+    z-index: 99;
+    overflow: hidden;
+
+  }
+
+  .facebook-2 {
+    right: -473px;
+    top: -34px;
+  }
+
+  .linkdin-btn {
+    top: 66px;
+    right: -471px;
+  }
+
+  .instagram-btn {
+    top: 178px;
+    right: -474px;
+  }
+
+  .twiter-btn {
+    top: 280px;
+    right: -476px;
+  }
+    
+}
+
+@media (max-width:991.98px) {
+  
+
+        
+}
+
+
+
+/* 
+@media (max-width:992px) and (min-width:1320px) {
+  .circle {
+      position: absolute;
+      left: 181px;
+  
+    }
+  
+} */
+
+/* @media (min-width: 992px) {
   section::after {
     content: "";
     position: absolute;
